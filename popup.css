@@ -1,20 +1,31 @@
 body {
+    background: #4d4d4d;
     width: 375px;
     margin: 0px;
     -webkit-user-select: none;
 }
 .background {
-    height: 276px;
     position: relative;
 }
+#spigot {
+  position: absolute;
+  top:28px;
+  left:35px;
+  width:90px;
+  height:70px;
+}
 .header {
-    font-family: Aaargh;
-    font-size: 15px;
-    color: #DFDFDF;
+    font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    color: #8E8E8E;
     position: absolute;
-    top: 2px;
-    left: 10px;
+    top: 4px;
+    text-align: center;
     width: 100%;
+}
+.header a {
+  margin: 0 2px;
+  text-decoration: none;
 }
 .header a:link {
     color: #DFDFDF;
@@ -22,12 +33,13 @@ body {
 .header a:visited {
     color: #DFDFDF;
 }
+.header a:hover {
+  text-decoration: underline;
+}
 #options {
     cursor: pointer;
-    position: absolute;
-    top: 41px;
-    left: 300px;
-    width: 43px;
+    font-size:15px;
+    color: #DFDFDF;
 }
 .center {
     text-align: center;
@@ -38,36 +50,43 @@ body {
     font-family: Aaargh;
 }
 .content {
-    font-family: Aaargh;
-    color: #222222;
-    line-height: 1.48;
-    position: absolute;
-    top: 120px;
-    left: 24px;
+    background: url("sn_background.png") no-repeat;
+    font-family: Tahoma, Verdana, Helvetica, sans-serif;
+    color: #555;
+    line-height: 1.2;
+    height:72px;
     width: 100%;
+    padding: 40px 0px 0px 150px;
 }
 .content span,
 .content a {
-    font-size: 24px;
+    font-size: 1.2em;
 }
 .content a:visited {
     text-decoration: none;
+}
+.content span {
+    display: inline-block;
+    width: 35%;
+    margin-right: 4px;
 }
 #alerts,
 #messages,
 #posts,
 #rating {
+    width:auto;
+    text-align: right;
     font-weight: 100;
 }
 #alerts {
-    color: #B5B5B5;
+    color: #555;
 }
 #messages {
-    color: #B5B5B5;
+    color: #555;
 }
 #posts {
-    color: #B5B5B5;
+    color: #555;
 }
 #rating {
-    color: #90FF85;
+    color: #63b05c;
 }
