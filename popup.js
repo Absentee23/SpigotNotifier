@@ -3,7 +3,7 @@ var id = 'SpigotNotifier';
 $(document).ready(function() {
     chrome.storage.local.get('alerts', function(response) {
         if (response.alerts > 0) {
-            $("#alerts").css("color", "#a76760");
+            $("#alerts").css("color", "#d02828");
         } else {
             $("#alerts").css("color", "#646464");
         }
@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     chrome.storage.local.get('messages', function(response) {
         if (response.messages > 0) {
-            $("#messages").css("color", "#a76760");
+            $("#messages").css("color", "#d02828");
         } else {
             $("#messages").css("color", "#646464");
         }
